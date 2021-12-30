@@ -1,0 +1,11 @@
+---
+layout: base.njk
+permalink:
+  dynamic:
+    - /resolve
+---
+
+{{config.now}}
+{% if eleventy.serverless and eleventy.serverless.query.url %}
+  {% resolveUrl eleventy.serverless.query.url %}
+{% endif %}
