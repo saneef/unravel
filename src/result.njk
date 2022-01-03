@@ -5,7 +5,6 @@ permalink:
     - /resolve
 ---
 
-{{config.now}}
 {% if eleventy.serverless and eleventy.serverless.query.url %}
-  {% resolveUrl eleventy.serverless.query.url %}
+  <a href="{% resolveUrl eleventy.serverless.query.url %}">Resolved URL</a>
 {% endif %}
