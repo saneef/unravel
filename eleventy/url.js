@@ -1,10 +1,14 @@
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
-export const resolveUrl = async (url) => {
+const resolveUrl = async (url) => {
   try {
     const res = await fetch(url);
     return res.url;
   } catch (error) {
     console.log(error);
   }
+};
+
+module.exports = {
+  resolveUrl,
 };

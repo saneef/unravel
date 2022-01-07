@@ -1,4 +1,5 @@
 const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+const { resolveUrl } = require("./eleventy/url.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
@@ -8,7 +9,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("resolveUrl", async (url) => {
-    const { resolveUrl } = await import("./eleventy/url.mjs");
     const res = await resolveUrl(url);
 
     if (!res) {
