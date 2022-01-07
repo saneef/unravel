@@ -18,6 +18,9 @@ module.exports = function (eleventyConfig) {
     return res;
   });
 
+  eleventyConfig.addPassthroughCopy("src/styles");
+  eleventyConfig.addWatchTarget("./src/styles/");
+
   return {
     dir: {
       input: "src",
