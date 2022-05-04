@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "node-fetch": "3.2.4"
+    "node-fetch": "2.6.6"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
