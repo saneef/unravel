@@ -4,12 +4,6 @@ permalink:
   dynamic:
     - /
 ---
-
-{% set value = "" %}
-{% if eleventy.serverless and eleventy.serverless.query.url %}
-  {% set value = eleventy.serverless.query.url %}
-{% endif %}
-
 <div class="container">
   <div class="content">
     <h1>{{config.title}}</h1>
@@ -19,8 +13,11 @@ permalink:
       <input type="submit" value="Go">
     </form>
 
-    {% if eleventy.serverless and eleventy.serverless.query.url %}
-      <p class="result">{% resolveUrl eleventy.serverless.query.url %}</p>
+    {% if resolvedUrl %}
+      <p class="result">
+        <a class="button" href="{{ resolvedUrl }}">🔗 Resolved URL →</a>
+      </p>
+      <p class="result">Redirecting in 2 seconds...</p>
     {% endif %}
   </div>
 </div>
