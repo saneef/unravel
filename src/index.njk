@@ -17,7 +17,11 @@ permalink:
       <p class="result">
         <a class="button" href="{{ resolvedUrl }}">🔗 Resolved URL →</a>
       </p>
-      <p class="result">Redirecting in 2 seconds...</p>
+      <p class="result">
+        Redirecting to
+        <a href="{{ resolvedUrl }}">{{ resolvedUrl}}</a>
+        in 2 seconds...
+      </p>
     {% endif %}
   </div>
 </div>
