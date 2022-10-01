@@ -141,3 +141,12 @@ h1 {
   color: var(--color-accent-text);
   border-radius: 2000px;
 }
+
+.logo {
+  color: var(--color-accent);
+}
+
+.logo svg {
+  display: block;
+  height: 2rem;
+}
