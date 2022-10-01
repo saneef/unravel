@@ -10,6 +10,9 @@
   {% endif %}
 </head>
 <body>
+  <a href="/" class="logo">
+    {% include 'logo.svg' %}
+  </a>
 	{% block content %}{{ content | safe }}{% endblock %}
 </body>
 </html>
