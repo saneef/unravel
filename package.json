@@ -6,13 +6,15 @@
   "license": "MIT",
   "scripts": {
     "prestart": "rimraf dist",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "test": "jest"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "node-fetch": "2.6.6"
   },
   "devDependencies": {
+    "jest": "^29.2.2",
     "rimraf": "^3.0.2"
   }
 }

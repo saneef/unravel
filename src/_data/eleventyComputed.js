@@ -1,4 +1,4 @@
-const { resolveUrl } = require("../../eleventy/url.js");
+const { resolveUrl } = require("../../lib/url.js");
 module.exports = {
   async resolvedUrl(data) {
     const url = data?.eleventy?.serverless?.query?.url;
