@@ -89,17 +89,24 @@ a:not([class]) {
   }
 }
 
+/* Utilites */
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flow-space-400 {
+  --flow-space: 1rem;
+}
+
+.flow-space-500 {
+  --flow-space: 1.5rem;
+}
+/* Components */
+
 .container {
   display: grid;
   place-items: center;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--color-primary);
 }
 
 .form {

@@ -4,23 +4,19 @@ permalink:
   dynamic:
     - /
 ---
-<div class="container">
-  <div class="content">
-    <form class="form" action="/">
-      <label for="url">URL</label>
-      <input id="url" name="url" type="url" value="{{value}}"{% if not resolvedUrl %} autofocus{% endif %}>
-      <input type="submit" value="Go">
-    </form>
+<form class="form" action="/">
+  <label for="url">URL</label>
+  <input id="url" name="url" type="url" value="{{value}}"{% if not resolvedUrl %} autofocus{% endif %}>
+  <input type="submit" value="Go">
+</form>
 
-    {% if resolvedUrl %}
-      <p class="result">
-        <a class="button" href="{{ resolvedUrl }}">🔗 Resolved URL →</a>
-      </p>
-      <p class="result">
-        Redirecting to
-        <a href="{{ resolvedUrl }}">{{ resolvedUrl}}</a>
-        in 2 seconds...
-      </p>
-    {% endif %}
-  </div>
-</div>
+{% if resolvedUrl %}
+  <p class="result">
+    <a class="button" href="{{ resolvedUrl }}">🔗 Resolved URL →</a>
+  </p>
+  <p class="result">
+    Redirecting to
+    <a href="{{ resolvedUrl }}">{{ resolvedUrl}}</a>
+    in 2 seconds...
+  </p>
+{% endif %}
