@@ -1,10 +1,12 @@
-const { resolveUrl } = require("../../lib/url.js");
+const { resolveUrl, parseUrlEncodedUrl } = require("../../lib/url.js");
 module.exports = {
   async resolvedUrl(data) {
     const url = data?.eleventy?.serverless?.query?.url;
+    if (!url) return;
 
-    if (url) {
-      return resolveUrl(url);
-    }
+    const encodedUrl = parseUrlEncodedUrl(url);
+    if (encodedUrl) return encodedUrl;
+
+    return resolveUrl(url);
   },
 };
