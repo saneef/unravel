@@ -10,8 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "node-fetch": "2.6.6",
+    "@11ty/eleventy": "^1.0.2",
+    "node-fetch": "3.2.10",
     "truncate-url": "^2.1.0"
   },
   "devDependencies": {
