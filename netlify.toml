@@ -2,12 +2,8 @@
 publish = "dist/"
 command = "npm run build"
 
-[context.production.environment]
-NODE_ENV = "production"
-
 [context.deploy-preview.environment]
 DEBUG = "url,eleventyComputed"
-NODE_ENV = "production"
 
 [[redirects]]
 from = "/"
