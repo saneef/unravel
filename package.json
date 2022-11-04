@@ -7,10 +7,13 @@
   "scripts": {
     "prestart": "rimraf dist",
     "start": "eleventy --serve",
+    "build": "eleventy",
+    "postbuild": "lightningcss --minify --targets '> 0.25%, not IE 11' dist/styles/*.css -o dist/styles/*.css",
     "test": "jest"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "lightningcss-cli": "^1.16.0",
     "node-fetch": "2"
   },
   "devDependencies": {

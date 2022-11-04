@@ -81,12 +81,12 @@ a {
 a:not([class]) {
   color: currentColor;
   text-decoration-line: underline;
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--color-accent);
-  }
+a:not([class]):hover,
+a:not([class]):focus,
+a:not([class]):active {
+  color: var(--color-accent);
 }
 
 hr {
