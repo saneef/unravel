@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "node-fetch": "2.6.6"
+    "node-fetch": "2.6.6",
+    "truncate-url": "^2.1.0"
   },
   "devDependencies": {
     "jest": "^29.2.2",

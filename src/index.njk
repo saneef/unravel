@@ -12,26 +12,30 @@ permalink:
   </form>
 </div>
 
-{% if resolvedUrl %}
+{% if resolvedUrl and resolvedUrl.status === 'ok' %}
   <p class="result">
-    <a class="button" href="{{ resolvedUrl }}">🔗 Resolved URL →</a>
+    <a class="button" href="{{ resolvedUrl.target }}">🔗 Resolved URL →</a>
   </p>
   <p class="result">
     Redirecting to
-    <a href="{{ resolvedUrl }}">{{ resolvedUrl}}</a>
+    <a href="{{ resolvedUrl.target }}">{{ resolvedUrl.formattedTarget }}</a>
     in 2 seconds...
   </p>
-{% endif %}
-
-<hr class="flow-space-700">
-
-{% if not resolvedUrl %}
+{% elif resolvedUrl and resolvedUrl.status === 'error' %}
+  <p class="result">
+    <span class="error">Unable to resolve URL:</span> {{ resolvedUrl.formattedSource }}.
+  </p>
+{% elif not resolvedUrl %}
+  <hr class="flow-space-700">
   <div class="flow-space-700">
     <div class="flow-space-400">
       {% include "faqs.njk" %}
     </div>
   </div>
+{% else %}
+  <hr class="flow-space-700">
 {% endif %}
+
 <div class="flow-space-600">
   <div class="flow-space-400">
     {% include "footer.njk" %}

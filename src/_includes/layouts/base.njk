@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{config.title}}</title>
   <link rel="stylesheet" href="/styles/main.css">
-  {% if resolvedUrl %}
-  <meta http-equiv="Refresh" content="2; url='{{ resolvedUrl }}'" />
+  {% if resolvedUrl and resolvedUrl.status === 'ok' %}
+  <meta http-equiv="Refresh" content="2; url='{{ resolvedUrl.target }}'" />
   {% endif %}
   <meta name="generator" content="{{ eleventy.generator }}">
 </head>
