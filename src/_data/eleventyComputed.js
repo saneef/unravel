@@ -2,17 +2,10 @@ const { resolveUrl, parseUrlEncodedUrl } = require("../../eleventy/url.js");
 const debug = require("debug")("eleventyComputed");
 
 async function createUrlResult(source, target, status = "ok") {
-  const truncateUrl = (await import("truncate-url")).default;
-  debug({ source, target, status });
-  const formattedSource = source != null ? truncateUrl(source, 30) : undefined;
-  const formattedTarget = target != null ? truncateUrl(target, 30) : undefined;
-  debug({ formattedSource, formattedTarget });
   return {
     source,
     target,
     status,
-    formattedSource,
-    formattedTarget,
   };
 }
 

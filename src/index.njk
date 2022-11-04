@@ -18,12 +18,12 @@ permalink:
   </p>
   <p class="result">
     Redirecting to
-    <a href="{{ resolvedUrl.target }}">{{ resolvedUrl.formattedTarget }}</a>
+    <a href="{{ resolvedUrl.target }}">{{ resolvedUrl.target }}</a>
     in 2 seconds...
   </p>
 {% elif resolvedUrl and resolvedUrl.status === 'error' %}
   <p class="result">
-    <span class="error">Unable to resolve URL:</span> {{ resolvedUrl.formattedSource }}.
+    <span class="error">Unable to resolve URL:</span> {{ resolvedUrl.source }}.
   </p>
 {% elif not resolvedUrl %}
   <hr class="flow-space-700">

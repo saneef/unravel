@@ -3682,11 +3682,6 @@ token-stream@1.0.0:
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-1.0.0.tgz#cc200eab2613f4166d27ff9afc7ca56d49df6eb4"
   integrity sha1-zCAOqyYT9BZtJ/+a/HylbUnfbrQ=
 
-truncate-url@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/truncate-url/-/truncate-url-2.1.0.tgz#e1f57f13466e4ea510f8a554de31747d19ecd257"
-  integrity sha512-PACKaRVLSovjqI30LOIqEoSA/KD3wQuhCGe0rY2dcKqeteOeqlNJ8PHmeEqg5AsGSyVEOHjUSG1pVzzDHe9paA==
-
 type-detect@4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
