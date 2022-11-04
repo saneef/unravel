@@ -1429,6 +1429,11 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+detect-libc@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
+  integrity sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==
+
 detect-newline@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
@@ -2577,6 +2582,62 @@ leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
   integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
+
+lightningcss-cli-darwin-arm64@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-darwin-arm64/-/lightningcss-cli-darwin-arm64-1.16.0.tgz#cf8d2a33094775f3346ee2ccf2f402d19d94e9d7"
+  integrity sha512-oVvStP/pB/idS3jIkCUXaw7YtXm8JfOyhv4YitXeC/eW4guXnOnEH0QnYgPxHXkyoTzv7LTC8l8E+WSvTh0OZw==
+
+lightningcss-cli-darwin-x64@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-darwin-x64/-/lightningcss-cli-darwin-x64-1.16.0.tgz#10a25b150350fc30810afbb0d569adec6d8bca59"
+  integrity sha512-arTe6LZYbZReAFfe/NEUjxu2F72EN0J3QWU8bwEoqCzlxP3cx3ycOUU4M6jEI63MJMKD1sk/xPPODzm0/UTctA==
+
+lightningcss-cli-linux-arm-gnueabihf@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-linux-arm-gnueabihf/-/lightningcss-cli-linux-arm-gnueabihf-1.16.0.tgz#866d9d7673e005fec5c66112a62ba344d5d25836"
+  integrity sha512-Bw0lzRtcO7GNnQIJoIgokQr1rUb/yVc6OcwihgrYZjjVJDOQy/yaALsiLuyN36dfdfmarof+EBpdVzv3X89T8w==
+
+lightningcss-cli-linux-arm64-gnu@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-linux-arm64-gnu/-/lightningcss-cli-linux-arm64-gnu-1.16.0.tgz#b9fd786fe2a0f2a74c97bfd3f4876bbfe3bb5119"
+  integrity sha512-RRakhwHEnbvCEyrnTiCshWmQ8z0YjAKH63Qcl5fsWQCtra1GrGI9wcnvRRY87YCrHkBguUnZ23m6f7yfEIVVNA==
+
+lightningcss-cli-linux-arm64-musl@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-linux-arm64-musl/-/lightningcss-cli-linux-arm64-musl-1.16.0.tgz#cf8391b970883f4f5d07960e48ca757440be1dd4"
+  integrity sha512-BOVcioDGEmp0mYPruJELfzuJTNYgttCs3pxALKE9TjKUTF8GrzaUCbhHwdv8nAjyK5XnQ5uibQa89yJASeg1tg==
+
+lightningcss-cli-linux-x64-gnu@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-linux-x64-gnu/-/lightningcss-cli-linux-x64-gnu-1.16.0.tgz#93ded712b37e94afd6474d394321913a9ccf1262"
+  integrity sha512-/SMAmmTAqRjSPX4z0bjHPz9NC3R18w9CVXXimBjOflF22BToscVqUOoAOKt+1wIPWnzGW1ua/FpEgqDOsol0ww==
+
+lightningcss-cli-linux-x64-musl@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-linux-x64-musl/-/lightningcss-cli-linux-x64-musl-1.16.0.tgz#3c4d30075559e648a9016300cb90179888bb891c"
+  integrity sha512-48NqZOHwaJpt9ap2GSQuTqPnaOlQKrxTDjKc0Wsunmgb2q6Y2/R/ZPOU7e55laECZNy0RkR+V8UkXjsuQYPl2Q==
+
+lightningcss-cli-win32-x64-msvc@1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli-win32-x64-msvc/-/lightningcss-cli-win32-x64-msvc-1.16.0.tgz#2ff195e5dc00af77facb8f6c6133cf03c40c5055"
+  integrity sha512-w+oZe3Nk4q0f6QDgSt/h5IHhBdfqYK4ZCi6a72oOG0op/v/dglztm7n1pzMsQ/etUvPA6AOM1qkyErxBuEATZA==
+
+lightningcss-cli@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/lightningcss-cli/-/lightningcss-cli-1.16.0.tgz#697f95316991a2d01331d5eb54e6285f6087683c"
+  integrity sha512-Ttn7Fa+muTwDs6AOufqikBFoIMvKaDfkqoirTT/2OVYOFoPex/h/fezZVXSi65uBl8nU/E5bYCE2EEaO7H5mAw==
+  dependencies:
+    detect-libc "^1.0.3"
+  optionalDependencies:
+    lightningcss-cli-darwin-arm64 "1.16.0"
+    lightningcss-cli-darwin-x64 "1.16.0"
+    lightningcss-cli-linux-arm-gnueabihf "1.16.0"
+    lightningcss-cli-linux-arm64-gnu "1.16.0"
+    lightningcss-cli-linux-arm64-musl "1.16.0"
+    lightningcss-cli-linux-x64-gnu "1.16.0"
+    lightningcss-cli-linux-x64-musl "1.16.0"
+    lightningcss-cli-win32-x64-msvc "1.16.0"
 
 limiter@^1.0.5:
   version "1.1.5"
