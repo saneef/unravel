@@ -58,6 +58,8 @@ select {
  */
 
 :root {
+  --color-text: #666;
+  --color-bg: #fffbeb;
   --color-accent: #16a34a;
   --color-accent-text: white;
   --color-primary: #99aeac;
@@ -69,8 +71,8 @@ html {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 100%;
   line-height: 1.5;
-  background-color: #fffbeb;
-  color: #666;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 a {
