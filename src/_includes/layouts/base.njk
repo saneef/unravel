@@ -8,6 +8,7 @@
   {% if resolvedUrl %}
   <meta http-equiv="Refresh" content="2; url='{{ resolvedUrl }}'" />
   {% endif %}
+  <meta name="generator" content="{{ eleventy.generator }}">
 </head>
 <body>
 	{% block content %}
