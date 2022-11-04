@@ -5,3 +5,5 @@ netlify/functions/dynamic/**
 
 # Local Netlify folder
 .netlify
+
+src/_includes/styles
