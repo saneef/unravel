@@ -58,9 +58,9 @@ select {
  */
 
 :root {
-  --color-primary: #78350f;
   --color-accent: #16a34a;
   --color-accent-text: white;
+  --color-primary: #99aeac;
   --color-danger: #dc2626;
 }
 
@@ -89,9 +89,22 @@ a:not([class]) {
   }
 }
 
+hr {
+  border: 0;
+  border-top: 0.125rem solid var(--color-primary);
+  width: 100%;
+  max-width: 30ch;
+  margin-block-start: var(--flow-space, 1rem);
+  margin-block-end: 0;
+}
+
 /* Utilites */
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
+}
+
+.flow-space-300 {
+  --flow-space: 0.45rem;
 }
 
 .flow-space-400 {
@@ -101,12 +114,22 @@ a:not([class]) {
 .flow-space-500 {
   --flow-space: 1.5rem;
 }
+
+.flow-space-600 {
+  --flow-space: 2.25rem;
+}
+
+.flow-space-700 {
+  --flow-space: 5.0625rem;
+}
+
 /* Components */
 
 .container {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  padding: 2rem 1rem;
 }
 
 .form {
@@ -126,6 +149,7 @@ a:not([class]) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 60ch;
 }
 
 .result {
@@ -156,4 +180,25 @@ a:not([class]) {
 .logo svg {
   display: block;
   height: 2rem;
+}
+
+.faq__question {
+  font-size: 1rem;
+}
+
+.footer {
+}
+
+.footer__list {
+  display: flex;
+  padding: 0;
+}
+
+.footer__list li {
+}
+
+.footer__list li + li::before {
+  content: "\b7";
+  padding-inline: 0.5rem;
+  display: inline-flex;
 }

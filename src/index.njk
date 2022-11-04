@@ -4,11 +4,13 @@ permalink:
   dynamic:
     - /
 ---
-<form class="form" action="/">
-  <label for="url">URL</label>
-  <input id="url" name="url" type="url" value="{{value}}"{% if not resolvedUrl %} autofocus{% endif %}>
-  <input type="submit" value="Go">
-</form>
+<div class="flow-space-700">
+  <form class="form" action="/">
+    <label for="url">URL</label>
+    <input id="url" name="url" type="url" value="{{value}}"{% if not resolvedUrl %} autofocus{% endif %}>
+    <input type="submit" value="Go">
+  </form>
+</div>
 
 {% if resolvedUrl %}
   <p class="result">
@@ -20,3 +22,18 @@ permalink:
     in 2 seconds...
   </p>
 {% endif %}
+
+<hr class="flow-space-700">
+
+{% if not resolvedUrl %}
+  <div class="flow-space-700">
+    <div class="flow-space-400">
+      {% include "faqs.njk" %}
+    </div>
+  </div>
+{% endif %}
+<div class="flow-space-600">
+  <div class="flow-space-400">
+    {% include "footer.njk" %}
+  </div>
+</div>
