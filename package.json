@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "prestart": "rimraf dist",
-    "start": "eleventy --serve",
-    "build": "cross-env NODE_ENV=production eleventy",
+    "start": "cross-env NODE_ENV=development eleventy --serve",
+    "build": "eleventy",
     "prebuild": "lightningcss --minify --targets '> 0.25%, not IE 11' src/styles/main.css -o src/_includes/styles/main.css",
     "test": "jest"
   },
