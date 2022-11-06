@@ -1,10 +1,14 @@
-const { resolveUrl, parseUrlEncodedUrl } = require("../../eleventy/url.js");
+const {
+  resolveUrl,
+  parseUrlEncodedUrl,
+  tidyUrl,
+} = require("../../eleventy/url.js");
 const debug = require("debug")("eleventyComputed");
 
 async function createUrlResult(source, target, status = "ok") {
   return {
     source,
-    target,
+    target: tidyUrl(target),
     status,
   };
 }
