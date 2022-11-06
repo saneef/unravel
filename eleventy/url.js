@@ -1,5 +1,6 @@
-const fetch = require("node-fetch");
 const debug = require("debug")("url");
+const fetch = require("node-fetch");
+const { TidyURL } = require("tidy-url");
 
 async function resolveUrl(url) {
   debug("resolveUrl", url);
@@ -43,7 +44,13 @@ function parseUrlEncodedUrl(url) {
   return result;
 }
 
+function tidyUrl(url) {
+  const r = TidyURL.clean(url);
+  return r.url;
+}
+
 module.exports = {
   resolveUrl,
   parseUrlEncodedUrl,
+  tidyUrl,
 };
