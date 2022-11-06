@@ -95,7 +95,7 @@ hr {
   border: 0.0625rem solid var(--color-primary);
   border-radius: 2000px;
   width: 100%;
-  max-width: 30ch;
+  max-width: 15ch;
   margin-block-start: var(--flow-space, 1rem);
   margin-block-end: 0;
 }
