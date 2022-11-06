@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{config.title}}</title>
 
-  {% if config.serverless %}
-  <style>{% include "styles/main.css" %}</style>
-  {% else %}
+  {% if config.development %}
   <link rel="stylesheet" href="/styles/main.css">
+  {% else %}
+  <style>{% include "styles/main.css" %}</style>
   {% endif %}
 
   {% if resolvedUrl and resolvedUrl.status === 'ok' %}
@@ -26,6 +26,5 @@
       </div>
     </div>
   {% endblock %}
-  {{ config.env }}
 </body>
 </html>

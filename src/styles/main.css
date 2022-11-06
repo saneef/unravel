@@ -188,15 +188,10 @@ hr {
   font-size: 1rem;
 }
 
-.footer {
-}
-
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-}
-
-.footer__list li {
 }
 
 .footer__list li + li::before {
