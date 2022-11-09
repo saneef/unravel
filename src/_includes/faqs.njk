@@ -5,7 +5,7 @@
   </div>
   <h2 class="faq__question">How does it work?</h2>
   <div class="faq__answer flow-space-300">
-    <p>{{config.title}} tries to read the encoded URL in the URLs. If it couldn&#8217;t find a target URL, it would use <a href="http://developer.mozilla.org/en-US/docs/Web/API/fetch"><code>fetch()</code></a> to get one. Common tracking parameters (e.g. Google UTM) are also removed. All of these are done using Netlify Functions.</p>
+    <p>{{config.title}} tries to read the encoded-URL from the URLs. If it can&#8217;t find one, it will use <a href="http://developer.mozilla.org/en-US/docs/Web/API/fetch"><code>fetch()</code></a> to get the target URL. Common tracking parameters (e.g. Google UTM) are also removed. All of these are done using Netlify Functions.</p>
   </div>
 
   <h2 class="faq__question">How about privacy?</h2>
