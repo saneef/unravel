@@ -1,5 +1,4 @@
 const debug = require("debug")("url");
-const fetch = require("node-fetch");
 const { TidyURL } = require("tidy-url");
 
 async function resolveUrl(url) {
