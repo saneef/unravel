@@ -19,12 +19,17 @@
 </head>
 <body>
   {% block content %}
-    <div class="container">
+    <main class="container">
       <div class="content flow flow-space-500">
-        <a href="/" class="logo" aria-label="Unravel">{% include 'logo.svg' %}</a>
+        <h1>
+          <a href="/" class="logo">
+            {% include 'logo.svg' %}
+            <span class="sr-only">Unravel</span>
+          </a>
+        </h1>
         {{ content | safe }}
       </div>
-    </div>
+    </main>
   {% endblock %}
 </body>
 </html>
