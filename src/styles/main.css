@@ -188,6 +188,17 @@ hr {
   font-size: 1rem;
 }
 
+.contact {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: color-mix(
+    in lch,
+    var(--color-bg),
+    var(--color-primary) 20%
+  );
+  color: color-mix(in lch, var(--color-text), black 20%);
+}
+
 .footer__list {
   display: flex;
   flex-wrap: wrap;
