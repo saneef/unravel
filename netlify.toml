@@ -4,7 +4,7 @@ command = "npm run build"
 
 [[redirects]]
 from = "/"
-to = "/.netlify/functions/dynamic"
+to = "/netlify/functions/dynamic"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "dynamic"
