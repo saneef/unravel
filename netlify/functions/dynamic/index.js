@@ -38,7 +38,7 @@ async function handler(event) {
           error: error.message,
         },
         null,
-        2
+        2,
       ),
     };
   }
