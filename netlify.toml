@@ -8,3 +8,9 @@ to = "/.netlify/functions/dynamic"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "dynamic"
+
+[functions]
+included_files = [
+  "./netlify/functions/dynamic/**/*",
+  "./netlify/functions/dynamic/.cache/**/*"
+]
