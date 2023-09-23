@@ -64,6 +64,7 @@ select {
   --color-accent-text: white;
   --color-primary: #99aeac;
   --color-danger: #dc2626;
+  --color-border: var(--color-primary);
 }
 
 html {
@@ -136,15 +137,32 @@ hr {
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .form input[type="url"] {
   background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-border);
   border-radius: 0.25rem;
   padding: 0.125rem 0.25rem;
+}
+
+.form input[type="url"]:user-invalid {
+  border-color: var(--color-danger);
+}
+
+.form__error {
+  display: none;
+  width: 100%;
+  color: var(--color-danger);
+  text-align: center;
+}
+
+.form input[type="url"]:user-invalid ~ .form__error {
+  display: block;
 }
 
 .content {
