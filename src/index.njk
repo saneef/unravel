@@ -4,47 +4,44 @@ permalink:
   dynamic:
     - /
 ---
+
 <div class="flow-space-700">
   <form class="form" action="/">
     <label for="url">URL</label>
-    <input id="url" name="url" type="url" value="{{value}}">
-    <input type="submit" value="Go">
+    <input id="url" name="url" type="url" value="{{value}}" />
+    <input type="submit" value="Go" />
 
     <p class="form__error">Please provide a valid URL</p>
   </form>
 </div>
 
 {% if resolvedUrl and resolvedUrl.status === 'ok' %}
-  <p class="result">
-    <a class="button" href="{{ resolvedUrl.target }}">🔗 Resolved URL →</a>
-  </p>
-  <p class="result">
-    Redirecting to
-    <a href="{{ resolvedUrl.target }}">{{ resolvedUrl.target }}</a>
-    in 2 seconds...
-  </p>
+
+<p class="result">
+  The resolved URL is
+  <a href="{{ resolvedUrl.target }}">{{ resolvedUrl.target }}</a>
+</p>
+<p class="result">
+  <a class="button" href="{{ resolvedUrl.target }}">🔗 Visit URL →</a>
+</p>
 {% elif resolvedUrl and resolvedUrl.status === 'error' %}
-  <p class="result">
-    <span class="error">Unable to resolve URL:</span> {{ resolvedUrl.source }}.
-  </p>
+<p class="result">
+  <span class="error">Unable to resolve URL:</span> {{ resolvedUrl.source }}.
+</p>
 {% elif not resolvedUrl %}
-  <hr class="flow-space-700">
-  <div class="flow-space-700">
-    <div class="flow flow-space-500">
-      {% include "contact.njk" %}
-      <div>
-        <div class="flow-space-400">
-          {% include "faqs.njk" %}
-        </div>
-      </div>
+<hr class="flow-space-700" />
+<div class="flow-space-700">
+  <div class="flow flow-space-500">
+    {% include "contact.njk" %}
+    <div>
+      <div class="flow-space-400">{% include "faqs.njk" %}</div>
     </div>
   </div>
+</div>
 {% else %}
-  <hr class="flow-space-700">
+<hr class="flow-space-700" />
 {% endif %}
 
 <div class="flow-space-600">
-  <div class="flow-space-400">
-    {% include "footer.njk" %}
-  </div>
+  <div class="flow-space-400">{% include "footer.njk" %}</div>
 </div>
