@@ -1,0 +1,8 @@
+---
+layout: layouts/blank.njk
+permalink:
+  dynamic:
+    - /resolve/
+---
+
+{{- resolvedUrl | dump(4) | safe -}}
