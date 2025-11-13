@@ -59,7 +59,9 @@ select {
 
 :root {
   --color-text: #666;
+  --color-text-dark: #333;
   --color-bg: #fffbeb;
+  --color-bg-dark: #e8ecdc;
   --color-accent: #16a34a;
   --color-accent-text: white;
   --color-primary: #99aeac;
@@ -209,12 +211,8 @@ hr {
 .contact {
   padding: 1rem;
   border-radius: 0.25rem;
-  background-color: color-mix(
-    in lch,
-    var(--color-bg),
-    var(--color-primary) 20%
-  );
-  color: color-mix(in lch, var(--color-text), black 20%);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
 }
 
 .footer__list {
