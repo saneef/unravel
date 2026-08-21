@@ -6,9 +6,15 @@
       It comes handy when the tracking URL is blocked in your local network because of Ad blockers like <a href="https://pi-hole.net/">Pi-hole</a> or <a href="https://nextdns.io/">NextDNS</a>.
       Remember those unsubscribe links that your Ad blocker blocks? I made this for them.</p>
   </div>
+
   <h2 class="faq__question">How does it work?</h2>
   <div class="faq__answer flow-space-300">
     <p>{{config.title}} tries to read the encoded-URL from the URLs. If it can&#8217;t find one, it will use <a href="http://developer.mozilla.org/en-US/docs/Web/API/fetch"><code>fetch()</code></a> to get the target URL. Common tracking parameters (e.g. Google UTM) are also removed. All of these are done using Netlify Functions.</p>
+  </div>
+
+  <h2 class="faq__question">Is there an API?</h2>
+  <div class="faq__answer flow-space-300">
+    <p>Yes, of course! You can find <a href="https://github.com/saneef/unravel/#api">the usage instructions on GitHub</a>. </p>
   </div>
 
   <h2 class="faq__question">How about privacy?</h2>
